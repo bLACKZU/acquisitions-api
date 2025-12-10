@@ -1,0 +1,2 @@
+Linked to MVC(model view controller paradigm)
+The Model-View-Controller (MVC) paradigm is a software design pattern that separates an application into three interconnected parts: the Model (data and business logic), the View (user interface/presentation), and the Controller (handles input, orchestrates Model/View updates)

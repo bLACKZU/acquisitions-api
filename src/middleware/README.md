@@ -1,0 +1,1 @@
+Functions that are run before and after other functions that our app does
