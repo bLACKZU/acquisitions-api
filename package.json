@@ -9,7 +9,7 @@
     "#models/*": "./src/models/*",
     "#routes/*": "./src/routes/*",
     "#controllers/*": "./src/controllers/*",
-    "#middlewares/*": "./src/middlewares/*",
+    "#middleware/*": "./src/middleware/*",
     "#utils/*": "./src/utils/*",
     "#services/*": "./src/services/*",
     "#validations/*": "./src/validations/*"
@@ -36,6 +36,8 @@
   },
   "homepage": "https://github.com/bLACKZU/acquisitions-api#readme",
   "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.15",
+    "@arcjet/node": "^1.0.0-beta.15",
     "@neondatabase/serverless": "^1.0.2",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",

@@ -7,6 +7,7 @@ import morgan from 'morgan';
 import cors from 'cors'; // Cors lets your backend decide which external domains can make request to it, without it any domain can make request to your backend which is a security risk
 import cookieParser from 'cookie-parser';
 import router from '#routes/auth.routes.js';
+import securityMiddleware from '#middleware/security.middleware.js';
 
 const app = express();
 app.use(helmet());
@@ -20,7 +21,7 @@ app.use(
     stream: { write: message => logger.info(message.trim()) },
   })
 );
-
+app.use(securityMiddleware);
 app.use('/api/auth', router);
 
 app.get('/', (req, res) => {
