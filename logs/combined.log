@@ -47,3 +47,10 @@
 {"level":"info","message":"User Tiasha created with ID: 2","service":"acquisitions-api"}
 {"level":"info","message":"User registered successfully: tiashagh12@gmail.com","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [14/Dec/2025:13:13:36 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 120 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User Baby created with ID: 3","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: baby@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Dec/2025:14:58:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 111 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User logged in successfully: baby@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Dec/2025:15:01:06 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 110 \"-\" \"HTTPie\"","service":"acquisitions-api"}
+{"level":"info","message":"User logged out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [14/Dec/2025:15:01:36 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"HTTPie\"","service":"acquisitions-api"}
