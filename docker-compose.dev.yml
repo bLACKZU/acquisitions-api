@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: neon_local_db
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env.development
+  
+  app:
+    build:
+      context: .
+      target: development
+    container_name: acquisitions_api_dev
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    depends_on:
+      - neon-local
