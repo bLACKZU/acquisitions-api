@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: acquisitions-deployment
+  labels:
+    app: acquisitions
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: acquisitions
+  template:
+    metadata:
+      labels:
+        app: acquisitions
+    spec:
+      containers:
+      - name: acquisitions
+        image: blackzu69/acquisitions-api:latest
+        envFrom:
+        - configMapRef:
+            name: acquistions-config
+        - secretRef:
+            name: acquisitions-secret
+        ports:
+        - containerPort: 3000
