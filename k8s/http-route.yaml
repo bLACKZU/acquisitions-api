@@ -1,0 +1,16 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: acquisitions-api-route
+spec:
+  parentRefs:
+    - name: eg
+  hostnames:
+    - "acquisitions-api.local"
+  rules:
+    - backendRefs:
+        - group: ""
+          kind: Service
+          name: acquisitions-service
+          port: 3000
+          weight: 1
